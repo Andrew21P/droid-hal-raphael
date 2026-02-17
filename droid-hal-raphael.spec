@@ -12,8 +12,8 @@
 
 %define droid_target_aarch64 1
 
-# Skip kernel config verification (kernel already built in Job 1)
-%define skip_mer_verify_kernel_config 1
+# Skip kernel config verification - kernel already built separately
+%define have_kernel_config_checker 0
 
 # Entries migrated from the old rpm/droid-hal-hammerhead.spec
 %define enable_kernel_update 1
